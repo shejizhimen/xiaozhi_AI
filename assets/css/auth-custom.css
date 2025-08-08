@@ -1,0 +1,193 @@
+/* 登录注册页面自定义样式 */
+
+/* 标签页样式 */
+.login-tabs .nav-tabs,
+.register-tabs .nav-tabs {
+    border-bottom: 2px solid #e9ecef;
+    margin-bottom: 2rem;
+}
+
+.login-tabs .nav-link,
+.register-tabs .nav-link {
+    border: none;
+    border-radius: 0;
+    color: #6c757d;
+    font-weight: 500;
+    padding: 12px 20px;
+    transition: all 0.3s ease;
+    background: transparent;
+}
+
+.login-tabs .nav-link:hover,
+.register-tabs .nav-link:hover {
+    border-color: transparent;
+    color: #007bff;
+}
+
+.login-tabs .nav-link.active,
+.register-tabs .nav-link.active {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    background: transparent;
+}
+
+.login-tabs .nav-link i,
+.register-tabs .nav-link i {
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+/* 表单样式优化 */
+.login-form {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* 登录方式切换 */
+.login-method-switch {
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.login-method-switch .form-check-label {
+    font-weight: 500;
+    color: #495057;
+}
+
+/* 验证码按钮 */
+#sendSmsCode,
+#sendLoginSmsCode {
+    white-space: nowrap;
+    border-radius: 0 8px 8px 0;
+    font-size: 14px;
+    padding: 12px 16px;
+}
+
+/* 微信相关样式 */
+.qr-code-wrapper {
+    display: inline-block;
+    padding: 20px;
+    background: #fff;
+    border: 2px solid #e9ecef;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.qr-code-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.wechat-register-container,
+.wechat-login-container {
+    padding: 20px;
+}
+
+.wechat-tips .alert,
+.wechat-status .alert {
+    text-align: left;
+    border-radius: 8px;
+    border: none;
+    background: #e7f3ff;
+    color: #0c5460;
+}
+
+.wechat-tips .alert i,
+.wechat-status .alert i {
+    margin-right: 8px;
+    color: #007bff;
+}
+
+/* 按钮样式 */
+.theme-btn {
+    border-radius: 8px;
+    padding: 12px 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.theme-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .login-form {
+        padding: 30px 20px;
+    }
+    
+    .login-tabs .nav-link,
+    .register-tabs .nav-link {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    
+    .qr-code-img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* 加载动画 */
+.loading-spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #007bff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* 表单验证状态 */
+.form-control.is-valid {
+    border-color: #28a745;
+}
+
+.form-control.is-invalid {
+    border-color: #dc3545;
+}
+
+.invalid-feedback {
+    display: block;
+    color: #dc3545;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.valid-feedback {
+    display: block;
+    color: #28a745;
+    font-size: 12px;
+    margin-top: 5px;
+}
