@@ -1,4 +1,4 @@
-小智AI智习室  中小学生的提分神器
+小智AI智习室，中小学生的提分神器
 <img width="1399" height="836" alt="image" src="https://github.com/user-attachments/assets/8cf9b8dc-207c-4d4f-94f4-f8ddf8a69924" />
 小智AI成长中心（小智AI研习室）是一家专注于人工智能教育技术研发与应用的创新机构。我们致力于通过先进的AI技术，为小学、初中和高中学生提供个性化、智能化的学习解决方案，让每个人都能享受到高效、有趣的学习体验。
 <img width="1463" height="656" alt="image" src="https://github.com/user-attachments/assets/30448f3f-7bfa-4769-926e-824dbdfbdd42" />
